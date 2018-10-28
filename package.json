@@ -1,7 +1,7 @@
 {
   "name": "anonymus",
-  "version": "1.0.1",
-  "description": "",
+  "version": "1.0.2",
+  "description": "Generates random, not identifiable names for any purpose",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,6 +10,16 @@
     "type": "git",
     "url": "git+https://github.com/Bikossor/anonymus.git"
   },
+  "keywords": [
+    "anonymus",
+    "anonymous",
+    "names",
+    "string",
+    "generator",
+    "unidentifiable",
+    "animals",
+    "colors"
+  ],
   "author": "André Lichtenthäler",
   "license": "GPL-3.0",
   "bugs": {
