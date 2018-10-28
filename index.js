@@ -120,3 +120,7 @@ var anonymus = {
         return this.randomColor + " " + this.randomAnimal;
     }
 };
+
+if (typeof module !== "undefined" && module.exports) {
+    module.exports = anonymus;
+}
