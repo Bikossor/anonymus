@@ -1,7 +1,7 @@
 {
   "name": "anonymus",
   "version": "1.0.2",
-  "description": "Generates random, not identifiable names for any purpose",
+  "description": "Generates random, unidentifiable names for any purpose",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

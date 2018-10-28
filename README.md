@@ -1,5 +1,5 @@
 # anonymus
-Generates random, not identifiable names for any purpose
+Generates random, unidentifiable names for any purpose
 
 ## Installing
 ### Node.js environment
