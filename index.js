@@ -120,17 +120,17 @@ var anonymus = {
         return this.animals[Math.floor(Math.random() * this.sizeAnimals)];
     },
     create: function (amount) {
-        amount = parseInt(amount);
-
-        if (!Number.isInteger(amount)) {
-            throw new Error("Amount has to be an integer!");
-        }
-
-        if (amount > this.sizeMax) {
-            throw new Error("Amount cannot exceed 'anonymus.maxSize'!");
-        }
-
         if (amount) {
+            amount = parseInt(amount);
+
+            if (!Number.isInteger(amount)) {
+                throw new Error("Amount has to be an integer!");
+            }
+
+            if (amount > this.sizeMax) {
+                throw new Error("Amount cannot exceed 'anonymus.maxSize'!");
+            }
+            
             var result = [],
                 tmp;
 
