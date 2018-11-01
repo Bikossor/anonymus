@@ -110,6 +110,9 @@ var anonymus = {
     get sizeAnimals() {
         return this.animals.length;
     },
+    get sizeMax() {
+        return this.sizeColors * this.sizeAnimals;
+    },
     get randomColor() {
         return this.colors[Math.floor(Math.random() * this.sizeColors)];
     },
