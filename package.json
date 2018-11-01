@@ -1,6 +1,6 @@
 {
   "name": "anonymus",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Generates random, unidentifiable names for any purpose",
   "main": "index.js",
   "scripts": {
