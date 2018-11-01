@@ -119,7 +119,34 @@ var anonymus = {
     get randomAnimal() {
         return this.animals[Math.floor(Math.random() * this.sizeAnimals)];
     },
-    create: function () {
+    create: function (amount) {
+        amount = parseInt(amount);
+
+        if (!Number.isInteger(amount)) {
+            throw new Error("Amount has to be an integer!");
+        }
+
+        if (amount > this.sizeMax) {
+            throw new Error("Amount cannot exceed 'anonymus.maxSize'!");
+        }
+
+        if (amount) {
+            var result = [],
+                tmp;
+
+            for (var i = 0; i < amount; i++) {
+                tmp = this.randomColor + " " + this.randomAnimal;
+
+                while (result.includes(tmp)) {
+                    tmp = this.randomColor + " " + this.randomAnimal;
+                }
+
+                result.push(tmp);
+            }
+            
+            return result;
+        }
+
         return this.randomColor + " " + this.randomAnimal;
     }
 };
