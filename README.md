@@ -25,6 +25,15 @@ console.log(anonymus.create());
 console.log(anonymus.create());
 //=> "Blue sheep"
 
+console.log(anonymus.create(5));
+//=> [ 'Red hummingbird',
+//     'White frog',
+//     'Pink jellyfish',
+//     'Sapphire kangaroo',
+//     'Black dog' ]
+
+console.log(anonymus.create(anonymus.sizeMax));
+//=> Creates all unique possibilities.
 ```
 
 ## Contributing
