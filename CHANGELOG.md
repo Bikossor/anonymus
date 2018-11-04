@@ -6,8 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Version 1.3.0 (November 4st, 2018)
 ### Added
-- [#10](https://github.com/Bikossor/anonymus/issues/10) - Added this changelog
-- [#11](https://github.com/Bikossor/anonymus/issues/11) - Added 47 new colors; this increased the maximum amount from 1092 to 5040.
+- [#12](https://github.com/Bikossor/anonymus/issues/12) - Added a type definition
 
 ## Version 1.2.0 (November 1st, 2018)
 ### Added
