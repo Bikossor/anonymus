@@ -1,6 +1,13 @@
 # anonymus
 Generates random, unidentifiable names for any purpose
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/171758d1c7924f199f0f9b0b5f3d0dfe)](https://www.codacy.com/app/Bikossor/anonymus?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Bikossor/anonymus&amp;utm_campaign=Badge_Grade)
+![npm bundle size (minified + gzip)](https://img.shields.io/bundlephobia/minzip/anonymus.svg)
+![npm](https://img.shields.io/npm/dm/anonymus.svg)
+![GitHub issues](https://img.shields.io/github/issues/bikossor/anonymus.svg)
+![GitHub closed issues](https://img.shields.io/github/issues-closed/bikossor/anonymus.svg)
+![GitHub](https://img.shields.io/github/license/bikossor/anonymus.svg)
+
 ## Installing
 ### Node.js environment
 ```
