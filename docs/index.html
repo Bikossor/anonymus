@@ -4,56 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="anonymus - A JavaScript library to generate random, unidentifiable names for any purpose." />
+    <meta name="keywords" content="JavaScript, anonymus, Bikossor, library, generate, random, unidentifiable, npm, GitHub" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>anonymus - by Bikossor</title>
+    <title>anonymus by Bikossor</title>
 </head>
 
 <body>
-    <section id="Start">
+    <header>
         <h1>anonymus</h1>
-        <h2>Generates random, unidentifiable names for any purpose</h2>
-    </section>
+        <p>Generates random, unidentifiable names for any purpose</p>
+    </header>
     <main>
-        <section id="Installation" class="card">
-            <h1>Installation</h1>
-            <h2>In a browser:</h2>
-            <pre><span class="tag">&lt;script</span> <span class="attr">src</span>=<span class="value">"https://cdn.jsdelivr.net/npm/anonymus@1.3.1/index.min.js"</span><span class="tag">&gt;&lt;/script&gt;</span></pre>
-            <h2>npm</h2>
-            <pre>npm i anonymus --save</pre>
-        </section>
-        <section id="Usage" class="card">
-            <h1>Usage</h1>
-            <h2>npm</h2>
-            <pre>
-const anonymus = require("anonymus");
-
-console.log(anonymus.create());
-//=> "Orange panda"
-
-console.log(anonymus.create());
-//=> "Green hawk"
-
-console.log(anonymus.create());
-//=> "Blue sheep"
-
-console.log(anonymus.create(5));
-//=> [ 'Red hummingbird',
-//     'White frog',
-//     'Pink jellyfish',
-//     'Sapphire kangaroo',
-//     'Black dog' ]
-
-console.log(anonymus.create(anonymus.sizeMax));
-//=> Creates all unique possibilities.
-            </pre>
-        </section>
-        <section id="Demo" class="card">
-            <h1>Demo</h1>
-            <pre id="a_result"></pre>
-            <button id="a_generate">Generate</button>
+        <section id="Demo">
+            <h1>Try it out:</h1>
+            <section id="DemoContainer">
+                <section id="a_result"></section>
+                <button id="a_generate">Generate</button>
+            </section>
         </section>
     </main>
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <footer>
+        <a href="https://www.npmjs.com/package/anonymus" target="_blank">anonymus on npm</a>
+        <a href="https://github.com/Bikossor/anonymus" target="_blank">anonymus on GitHub</a>
+        <p>Created by <a href="https://bikossor.de" target="_blank">Bikossor</a></p>
+    </footer>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/styles.css">
     <script src="https://cdn.jsdelivr.net/npm/anonymus@1.3.1/index.min.js"></script>
     <script src="./assets/js/app.js"></script>
