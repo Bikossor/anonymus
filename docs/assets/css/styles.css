@@ -1,0 +1,63 @@
+/* ----- GENERAL ----- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: "Roboto Condensed";
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+pre {
+    color: #fff;
+    background: rgb(30, 30, 30);
+    padding: 2rem;
+    font-size: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+main {
+    height: auto;
+    min-width: 60%;
+    max-width: 100%;
+    background: #fff;
+    color: #000;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+section {
+    margin-bottom: 4rem;
+}
+
+/* ----- SECTIONS ----- */
+
+#Start {
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#Start h1 {
+    font-size: 6rem;
+}
