@@ -1,4 +1,4 @@
-// Type definitions for anonymus 1.5.0
+// Type definitions for anonymus 1.6.0
 // Definitions by: Bikossor <https://bikossor.de>
 
 export as namespace anonymus;
