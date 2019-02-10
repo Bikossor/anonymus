@@ -14,3 +14,4 @@ export const sizeAnimals: number;
 export const sizeMax: number;
 export const randomColor: string;
 export const randomAnimal: string;
+export const version: string;

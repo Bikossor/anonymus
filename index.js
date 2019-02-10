@@ -201,6 +201,9 @@ var anonymus = {
     get randomAnimal() {
         return this.animals[Math.floor(Math.random() * this.sizeAnimals)];
     },
+    get version() {
+        return [1, 5, 0].join(".");
+    },
     create: function (amount) {
         if (amount) {
             amount = parseInt(amount);
