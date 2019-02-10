@@ -5,6 +5,7 @@ var pump = require('pump');
 
 var fileName = "anonymus";
 var folderDestination = "dist/";
+var folderDocs = "docs/assets/js/";
 
 gulp.task("build-js", function (callback) {
 	pump([
@@ -12,6 +13,7 @@ gulp.task("build-js", function (callback) {
 		uglify(),
 		concat(fileName + ".min.js"),
 		gulp.dest(folderDestination),
+		gulp.dest(folderDocs)
 	], callback);
 });
 
