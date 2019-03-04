@@ -1,4 +1,4 @@
-// Type definitions for anonymus 1.3.1
+// Type definitions for anonymus 1.6.0
 // Definitions by: Bikossor <https://bikossor.de>
 
 export as namespace anonymus;
@@ -14,3 +14,4 @@ export const sizeAnimals: number;
 export const sizeMax: number;
 export const randomColor: string;
 export const randomAnimal: string;
+export const version: string;

@@ -1,66 +1,101 @@
 var anonymus = {
     get colors() {
         return [
-            "Red",
-            "Green",
-            "Blue",
-            "Black",
+            //-- White
             "White",
-            "Orange",
-            "Lime",
-            "Pink",
-            "Violet",
-            "Yellow",
-            "Teal",
-            "Sapphire",
-            "Ruby",
+            "Ghostwhite",
+            "Ivory",
+            "Vanilla",
+
+            //-- Red
+            "Red",
             "Darkred",
+            "Ruby",
             "Crimson",
-            "Gold",
-            "Darkorange",
-            "Forestgreen",
+
+            //-- Green
+            "Green",
             "Darkgreen",
-            "Greenyellow",
+            "Lime",
+            "Forestgreen",
+            "Sapphire",
+            "Jade",
+            "Emerald",
             "Yellowgreen",
             "Seagreen",
+            "Lawngreen",
+            "Limegreen",
+
+            //-- Orange
+            "Orange",
+            "Darkorange",
+            "Bronze",
+            "Sepia",
+            "Amber",
+
+            //-- Yellow
+            "Yellow",
+            "Gold",
+            "Khaki",
+            "Greenyellow",
+            "Beige",
+
+            //-- Gray
+            "Gray",
+            "Lightgray",
+            "Darkgray",
+            "Slategray",
+            "Shadow",
+            "Graphite",
+            "Silver",
+
+            //-- Black
+            "Black",
+            "Ebony",
+            "Midnight",
+            "Ink",
+            "Obsidian",
+
+            //-- Blue
+            "Blue",
+            "Skyblue",
+            "Steelblue",
+            "Indigo",
+            "Teal",
             "Cyan",
             "Darkcyan",
             "Lightblue",
-            "Skyblue",
-            "Steelblue",
             "Darkblue",
-            "Lightblue",
-            "Magenta",
-            "Darkviolet",
-            "Darkmagenta",
-            "Purple",
-            "Indigo",
-            "Lightpink",
-            "Hotpink",
-            "Deeppink",
             "Aliceblue",
-            "Ghostwhite",
-            "Mistyrose",
-            "Gray",
-            "Lightgray",
-            "Silver",
-            "Darkgray",
-            "Slategray",
-            "Rosybrown",
-            "Sandybrown",
-            "Chocolate",
-            "Brown",
-            "Khaki",
-            "Lawngreen",
-            "Limegreen",
-            "Bronze",
-            "Emerald",
-            "Ivory",
             "Navyblue",
-            "Rainbow",
             "Turquoise",
             "Ultramarine",
-            "Terracotta"
+
+            //-- Brown
+            "Brown",
+            "Chocolate",
+            "Hickory",
+            "Umber",
+
+            //-- Purple
+            "Purple",
+            "Violet",
+            "Darkviolet",
+            "Magenta",
+            "Darkmagenta",
+            "Lilac",
+            "Amthyst",
+
+            //-- Pink
+            "Pink",
+            "Mistyrose",
+            "Hotpink",
+            "Lightpink",
+            "Rose",
+            "Rosewood",
+
+            //-- Misc
+            "Rainbow"
         ]
     },
     get animals() {
@@ -81,6 +116,7 @@ var anonymus = {
             "chameleon",
             "cheetah",
             "chicken",
+            "chinchilla",
             "cobra",
             "coyote",
             "crab",
@@ -95,9 +131,11 @@ var anonymus = {
             "eagle",
             "elephant",
             "falcon",
+            "fish",
             "fox",
             "frog",
-            "giraffe",
+            "gecko",
+            "giraffe",            
             "goat",
             "gorilla",
             "grasshopper",
@@ -114,6 +152,7 @@ var anonymus = {
             "lemur",
             "leopard",
             "lion",
+            "lizard",
             "llama",
             "lobster",
             "mammoth",
@@ -142,6 +181,7 @@ var anonymus = {
             "spider",
             "squid",
             "squirrel",
+            "starfish",
             "swan",
             "tiger",
             "turtle",
@@ -166,6 +206,9 @@ var anonymus = {
     get randomAnimal() {
         return this.animals[Math.floor(Math.random() * this.sizeAnimals)];
     },
+    get version() {
+        return [1, 6, 0].join(".");
+    },
     create: function (amount) {
         if (amount) {
             amount = parseInt(amount);
@@ -177,7 +220,7 @@ var anonymus = {
             if (amount > this.sizeMax) {
                 throw new Error("Amount cannot exceed 'anonymus.maxSize'!");
             }
-            
+
             var result = [],
                 tmp;
 
@@ -190,7 +233,7 @@ var anonymus = {
 
                 result.push(tmp);
             }
-            
+
             return result;
         }
 

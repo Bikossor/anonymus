@@ -1,10 +1,11 @@
 {
   "name": "anonymus",
-  "version": "1.4.0",
+  "version": "1.6.0",
   "description": "Generates random, unidentifiable names for any purpose",
-  "main": "index.js",
+  "main": "./dist/anonymus.min.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp"
   },
   "repository": {
     "type": "git",
@@ -25,5 +26,11 @@
   "bugs": {
     "url": "https://github.com/Bikossor/anonymus/issues"
   },
-  "homepage": "https://bikossor.github.io/anonymus/"
+  "homepage": "https://bikossor.github.io/anonymus/",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-uglify": "^3.0.1",
+    "pump": "^3.0.0"
+  }
 }
