@@ -74,12 +74,13 @@ h2 {
 
 #a_result {
     font-size: 2rem;
+    height: 3rem;
     margin: 2rem;
     text-align: center;
-    border-bottom: 3px solid hsl(15, 75%, 60%);
+    border: none;
 }
 
-#a_generate {
+button {
     border: 3px solid hsl(15, 75%, 60%);
     color: #000;
     background: #fff;
@@ -87,9 +88,19 @@ h2 {
     font-family: "Lato";
     border-radius: 5px;
     transition: color 200ms, background 200ms;
+    width: 100%;
 }
 
-#a_generate:hover {
+button:hover {
     color: #fff;
     background: hsl(15, 75%, 60%);
+}
+
+.flexrow {
+    display: flex;
+    width: 100%;
+}
+
+.flexwrapper {
+    max-width: 750px;
 }
