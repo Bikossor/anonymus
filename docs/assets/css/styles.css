@@ -8,7 +8,7 @@
 html,
 body {
     font-family: "Lato";
-    background: #ff6333;
+    background: hsl(15, 75%, 60%);
 }
 
 a {
@@ -38,7 +38,8 @@ footer {
 
 header h1 {
     font-size: 6rem;
-    text-shadow: 4px 4px 2px rgba(0, 0, 0, .5);
+    text-shadow: 8px 4px rgba(0, 0, 0, .25);
+    margin-bottom: 1rem;
 }
 
 main {
@@ -75,20 +76,20 @@ h2 {
     font-size: 2rem;
     margin: 2rem;
     text-align: center;
-    border-bottom: 3px solid #ff6333;
+    border-bottom: 3px solid hsl(15, 75%, 60%);
 }
 
 #a_generate {
-    border: 3px solid #ff6333;
+    border: 3px solid hsl(15, 75%, 60%);
     color: #000;
     background: #fff;
     padding: .75rem 1.25rem;
     font-family: "Lato";
-    border-radius: 8px;
+    border-radius: 5px;
     transition: color 200ms, background 200ms;
 }
 
 #a_generate:hover {
     color: #fff;
-    background: #ff6333;
+    background: hsl(15, 75%, 60%);
 }
