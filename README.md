@@ -1,6 +1,7 @@
 # anonymus
 Generates random, unidentifiable names for any purpose
 
+[![Build Status](https://travis-ci.org/Bikossor/anonymus.svg?branch=develop)](https://travis-ci.org/Bikossor/anonymus)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/171758d1c7924f199f0f9b0b5f3d0dfe)](https://www.codacy.com/app/Bikossor/anonymus?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Bikossor/anonymus&amp;utm_campaign=Badge_Grade)
 ![npm bundle size (minified + gzip)](https://img.shields.io/bundlephobia/minzip/anonymus.svg)
 ![npm](https://img.shields.io/npm/dm/anonymus.svg)
@@ -8,21 +9,32 @@ Generates random, unidentifiable names for any purpose
 ![GitHub closed issues](https://img.shields.io/github/issues-closed/bikossor/anonymus.svg)
 ![GitHub](https://img.shields.io/github/license/bikossor/anonymus.svg)
 
-## Installing
+## Installation
 ### Node.js environment
 ```
 npm i anonymus --save
 ```
 
 ### Browser environment
-Download the latest version of anonymus [here](https://github.com/Bikossor/anonymus/releases/latest).
+Include this line in your HTML (preferably in the body; [here's why](https://www.w3schools.com/js/js_whereto.asp)) and you can obtain anonymus via the jsDelivr CDN:
+```html
+<script src="https://cdn.jsdelivr.net/npm/anonymus@1"></script>
+```
+or the unpkg CDN:
+```html
+<script src="https://unpkg.com/anonymus@1"></script>
+```
+or you can download the latest version of anonymus [here](https://github.com/Bikossor/anonymus/releases/latest).
 
 ## Usage
 ### Node.js environment
 
 ```javascript
 const anonymus = require("anonymus");
+```
 
+### Node.js environment + Browser environment
+```javascript
 console.log(anonymus.create());
 //=> "Orange panda"
 

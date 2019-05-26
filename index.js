@@ -207,7 +207,7 @@ var anonymus = {
         return this.animals[Math.floor(Math.random() * this.sizeAnimals)];
     },
     get version() {
-        return [1, 6, 2].join(".");
+        return [1, 6, 3].join(".");
     },
     create: function (amount) {
         if (amount) {
