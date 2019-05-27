@@ -110,3 +110,14 @@ h2 {
 .flexwrapper {
     max-width: 750px;
 }
+
+.NameVersionWrapper {
+    position: relative;
+}
+
+#package_version {
+    display: inline-block;
+    position: absolute;
+    right: 4px;
+    top: 165px;
+}
