@@ -28,4 +28,6 @@ gulp.task("build-js", function (callback) {
 	], callback);
 });
 
-gulp.task("default", ["build-js"]);
+gulp.task("default",
+	gulp.series("build-js")
+);
