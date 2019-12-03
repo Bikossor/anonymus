@@ -1,4 +1,4 @@
-const anonymus = require('../index.js');
+const anonymus = require('../dist/anonymus');
 
 test(`create() => A string matching 2 words seperated by a space`, () => {
     expect(
