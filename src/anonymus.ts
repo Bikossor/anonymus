@@ -1,4 +1,7 @@
 var anonymus = {
+    /**
+     * List of colors `anonymus` will use
+     */
     get colors() {
         return [
             //-- White
@@ -98,6 +101,9 @@ var anonymus = {
             "Rainbow"
         ]
     },
+    /**
+     * List of animals `anonymus` will use
+     */
     get animals() {
         return [
             "albatross",
@@ -191,24 +197,45 @@ var anonymus = {
             "zebra"
         ]
     },
+    /**
+     * Number of entries of `anonymus.colors`
+     */
     get sizeColors() {
         return this.colors.length;
     },
+    /**
+     * Number of entries of `anonymus.animals`
+     */
     get sizeAnimals() {
         return this.animals.length;
     },
+    /**
+     * Number of unique entries `anonymus` can generate
+     */
     get sizeMax() {
         return this.sizeColors * this.sizeAnimals;
     },
+    /**
+     * Returns a random color
+     */
     get randomColor() {
         return this.colors[Math.floor(Math.random() * this.sizeColors)];
     },
+    /**
+     * Returns a random animal
+     */
     get randomAnimal() {
         return this.animals[Math.floor(Math.random() * this.sizeAnimals)];
     },
+    /**
+     * Returns the current version of `anonymus`
+     */
     get version() {
         return [1, 6, 3].join(".");
     },
+    /**
+     * Generates one or more unique names
+     */
     create: function (amount) {
         if (amount) {
             amount = parseInt(amount);
