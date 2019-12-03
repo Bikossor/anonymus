@@ -29,6 +29,7 @@
   },
   "homepage": "https://anonymus.app/",
   "devDependencies": {
+    "@types/node": "^12.12.14",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
     "gulp-header": "^2.0.7",
