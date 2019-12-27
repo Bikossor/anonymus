@@ -264,7 +264,9 @@ var anonymus = {
             return result;
         }
 
-        return this.randomColor + " " + this.randomAnimal;
+        return [
+            this.randomColor + " " + this.randomAnimal
+        ];
     }
 };
 

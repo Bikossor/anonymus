@@ -34,5 +34,5 @@ declare var anonymus: {
     /**
      * Generates one or more unique names
      */
-    create: (amount: any) => string | any[];
+    create: (amount: any) => any[];
 };
