@@ -36,20 +36,20 @@ const anonymus = require("anonymus");
 ### Node.js environment + Browser environment
 ```javascript
 console.log(anonymus.create());
-//=> "Orange panda"
+//=> ['Orange panda']
 
 console.log(anonymus.create());
-//=> "Green hawk"
+//=> ['Green hawk']
 
 console.log(anonymus.create());
-//=> "Blue sheep"
+//=> ['Blue sheep']
 
 console.log(anonymus.create(5));
-//=> [ 'Red hummingbird',
-//     'White frog',
-//     'Pink jellyfish',
-//     'Sapphire kangaroo',
-//     'Black dog' ]
+//=> ['Red hummingbird',
+//    'White frog',
+//    'Pink jellyfish',
+//    'Sapphire kangaroo',
+//    'Black dog']
 
 console.log(anonymus.create(anonymus.sizeMax));
 //=> Creates all unique possibilities.
