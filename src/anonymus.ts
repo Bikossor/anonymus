@@ -231,7 +231,7 @@ var anonymus = {
      * Returns the current version of `anonymus`
      */
     get version() {
-        return [1, 6, 3].join(".");
+        return [2, 0, 0].join(".");
     },
     /**
      * Generates one or more unique names
