@@ -17,7 +17,7 @@ var headerString = ['/*',
 
 gulp.task("build-js", function (callback) {
 	pump([
-		gulp.src("index.js"),
+		gulp.src("dist/anonymus.js"),
 		uglify(),
 		concat(fileName + ".min.js"),
 		header(headerString, {
@@ -28,4 +28,6 @@ gulp.task("build-js", function (callback) {
 	], callback);
 });
 
-gulp.task("default", ["build-js"]);
+gulp.task("default",
+	gulp.series("build-js")
+);

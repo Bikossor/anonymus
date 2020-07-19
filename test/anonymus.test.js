@@ -1,9 +1,11 @@
-const anonymus = require('../index.js');
+const anonymus = require('../dist/anonymus');
 
-test(`create() => A string matching 2 words seperated by a space`, () => {
-    expect(
-        anonymus.create()
-    ).toMatch(/^\w+\s\w+$/);
+test(`create() => An array including a string matching 2 words seperated by a space`, () => {
+    var testResult = anonymus.create();
+
+    expect(testResult.length).toBe(1);
+
+    expect(testResult[0]).toMatch(/^\w+\s\w+$/);
 });
 
 test(`create("1") => An array including 1 string`, () => {
