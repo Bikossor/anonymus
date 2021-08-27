@@ -4,6 +4,9 @@
   "description": "Generates random, unidentifiable names for any purpose",
   "main": "./dist/anonymus.min.js",
   "types": "./dist/anonymus.d.ts",
+  "files": [
+    "dist/"
+  ],
   "scripts": {
     "test": "jest",
     "build": "tsc && gulp"
@@ -29,12 +32,12 @@
   },
   "homepage": "https://anonymus.app/",
   "devDependencies": {
-    "@types/node": "^12.12.14",
+    "@types/node": "^16.7.4",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-header": "^2.0.9",
-    "gulp-uglify": "^3.0.1",
-    "jest": "^24.9.0",
+    "gulp-uglify": "^3.0.2",
+    "jest": "^27.1.0",
     "pump": "^3.0.0"
   }
 }
