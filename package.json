@@ -4,6 +4,9 @@
   "description": "Generates random, unidentifiable names for any purpose",
   "main": "./dist/anonymus.min.js",
   "types": "./dist/anonymus.d.ts",
+  "files": [
+    "dist/"
+  ],
   "scripts": {
     "test": "jest",
     "build": "tsc && gulp"
