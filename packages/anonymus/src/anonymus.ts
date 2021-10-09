@@ -1,4 +1,4 @@
-var anonymus = {
+export const anonymus = {
     /**
      * List of colors `anonymus` will use
      */
@@ -269,7 +269,3 @@ var anonymus = {
         ];
     }
 };
-
-if (typeof module !== "undefined" && module.exports) {
-    module.exports = anonymus;
-}
