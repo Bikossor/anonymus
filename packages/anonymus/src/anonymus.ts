@@ -228,9 +228,8 @@ export const version = [2, 0, 0].join(".");
 /**
  * Generates one or more unique names
  */
-export const create = (amount) => {
+export const create = (amount: number) => {
   if (amount) {
-    amount = parseInt(amount);
 
     if (!Number.isInteger(amount)) {
       throw new Error("Amount has to be an integer!");
@@ -240,8 +239,8 @@ export const create = (amount) => {
       throw new Error("Amount cannot exceed 'anonymus.maxSize'!");
     }
 
-    var result = [],
-      tmp;
+    var result: Array<string> = [],
+      tmp: string;
 
     for (var i = 0; i < amount; i++) {
       tmp = randomColor() + " " + randomAnimal();
