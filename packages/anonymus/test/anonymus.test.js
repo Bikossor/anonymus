@@ -8,14 +8,10 @@ test(`create() => An array including a string matching 2 words seperated by a sp
     expect(testResult[0]).toMatch(/^\w+\s\w+$/);
 });
 
-test(`create("1") => An array including 1 string`, () => {
-    var testResult = anonymus.create("1");
-
-    testResult.forEach((entry) => {
-        expect(entry).toMatch(/^\w+\s\w+$/);
-    });
-
-    expect(testResult.length).toBe(1);
+test(`create("1") => Should throw an error`, () => {
+    expect(() => {
+        anonymus.create("1")
+    }).toThrow();
 });
 
 test(`create(Infinity) => Should throw an error`, () => {
