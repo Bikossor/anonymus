@@ -228,8 +228,7 @@ export const version = [2, 0, 0].join(".");
 /**
  * Generates one or more unique names
  */
-export const create = (amount: number) => {
-  if (amount) {
+export const create = (amount: number = 1) => {
 
     if (!Number.isInteger(amount)) {
       throw new Error("Amount has to be an integer!");
@@ -253,7 +252,4 @@ export const create = (amount: number) => {
     }
 
     return result;
-  }
-
-  return [randomColor() + " " + randomAnimal()];
 };
