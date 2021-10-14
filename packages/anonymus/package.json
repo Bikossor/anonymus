@@ -33,12 +33,15 @@
   },
   "homepage": "https://anonymus.app/",
   "devDependencies": {
+    "@types/jest": "^27.0.2",
     "@types/node": "^16.7.4",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-header": "^2.0.9",
     "gulp-uglify": "^3.0.2",
     "jest": "^27.1.0",
-    "pump": "^3.0.0"
+    "pump": "^3.0.0",
+    "ts-jest": "^27.0.6",
+    "typescript": "^4.4.4"
   }
 }
