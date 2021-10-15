@@ -37,13 +37,9 @@
     "@types/node": "^16.7.4",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
-    "gulp-concat": "^2.6.1",
-    "gulp-header": "^2.0.9",
     "gulp-typescript": "^6.0.0-alpha.1",
-    "gulp-uglify": "^3.0.2",
     "jest": "^27.1.0",
     "merge2": "^1.4.1",
-    "pump": "^3.0.0",
     "ts-jest": "^27.0.6",
     "typescript": "^4.4.4"
   }
