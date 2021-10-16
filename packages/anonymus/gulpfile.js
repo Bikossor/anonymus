@@ -1,33 +1,25 @@
-var gulp = require('gulp');
-var uglify = require('gulp-uglify');
-var concat = require('gulp-concat');
-var header = require('gulp-header');
-var pump = require('pump');
+const gulp = require("gulp");
+const ts = require("gulp-typescript");
+const del = require("del");
+const merge = require("merge2");
 
-var fileName = "anonymus";
-var folderDestination = "dist/";
-var folderDocs = "docs/assets/js/";
-var package = require('./package.json');
-var headerString = ['/*',
-	'<%= pkg.name %> v<%= pkg.version %> (<%= pkg.license %>) |',
-	'<%= pkg.author %> |',
-	'<%= pkg.homepage %>',
-	'*/\n'
-].join(' ');
+const tsProject = ts.createProject("tsconfig.json");
+const stream = tsProject.src().pipe(tsProject());
 
-gulp.task("build-js", function (callback) {
-	pump([
-		gulp.src("dist/anonymus.js"),
-		uglify(),
-		concat(fileName + ".min.js"),
-		header(headerString, {
-			pkg: package
-		}),
-		gulp.dest(folderDestination),
-		gulp.dest(folderDocs)
-	], callback);
+gulp.task("clean-up", () => {
+  return del("dist/**", {
+    force: true
+  });
 });
 
-gulp.task("default",
-	gulp.series("build-js")
-);
+gulp.task("build-typescript", () => {
+  return merge([
+    stream.js.pipe(gulp.dest("dist/")),
+    stream.dts.pipe(gulp.dest("dist/"))
+  ]);
+});
+
+gulp.task("default", gulp.series(
+  "clean-up",
+  "build-typescript"
+));
