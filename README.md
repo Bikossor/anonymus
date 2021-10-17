@@ -56,7 +56,7 @@ console.log(anonymus.create(anonymus.sizeMax));
 ```
 
 ## Upgrading
-You can read the upgrading guide [here](UPGRADING.md).
+You can read the upgrade guide [here](UPGRADING.md).
 
 ## Changelog
 You can read the changelog [here](CHANGELOG.md).
