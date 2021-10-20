@@ -1,4 +1,4 @@
-# Upgrading guide
+# Upgrade guide
 
 ## Upgrading from version 2.x.x to 3.x.x
 
