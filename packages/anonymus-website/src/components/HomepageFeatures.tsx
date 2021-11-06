@@ -4,9 +4,9 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-import React from 'react';
-import clsx from 'clsx';
-import styles from './HomepageFeatures.module.css';
+import React from "react";
+import clsx from "clsx";
+import styles from "./HomepageFeatures.module.css";
 
 type FeatureItem = {
   title: string;
@@ -32,11 +32,21 @@ const FeatureList: FeatureItem[] = [
       <>Anonymus ships with type declarations for TypeScript out-of-the-box.</>
     ),
   },
+  {
+    title: "Dependency-free",
+    image: "/img/undraw_running_wild.svg",
+    description: (
+      <>
+        Anonymus doesn't require any additional dependencies when used in your
+        projects.
+      </>
+    ),
+  },
 ];
 
-function Feature({title, image, description}: FeatureItem) {
+function Feature({ title, image, description }: FeatureItem) {
   return (
-    <div className={clsx('col col--4')}>
+    <div className={clsx("col col--4")}>
       <div className="text--center">
         <img className={styles.featureSvg} alt={title} src={image} />
       </div>
