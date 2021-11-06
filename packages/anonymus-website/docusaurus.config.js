@@ -6,15 +6,15 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  url: 'https://your-docusaurus-test-site.com',
+  title: 'anonymus',
+  tagline: 'Generates random, unidentifiable names for any purpose',
+  url: 'https://anonymus.app',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'Bikossor', // Usually your GitHub org/user name.
+  projectName: 'anonymus', // Usually your repo name.
 
   presets: [
     [
@@ -43,9 +43,9 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
+        title: 'anonymus',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'anonymus Logo',
           src: 'img/logo.svg',
         },
         items: [
@@ -55,9 +55,14 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          { to: '/blog', label: 'Blog', position: 'left' },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://www.npmjs.com/package/anonymus',
+            label: 'npm',
+            position: 'right',
+          },
+          {
+            href: 'https://github.com/Bikossor/anonymus',
             label: 'GitHub',
             position: 'right',
           },
@@ -80,15 +85,7 @@ const config = {
             items: [
               {
                 label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: 'https://stackoverflow.com/questions/tagged/anonymus',
               },
             ],
           },
@@ -100,13 +97,17 @@ const config = {
                 to: '/blog',
               },
               {
+                label: 'npm',
+                href: 'https://www.npmjs.com/package/anonymus',
+              },
+              {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/Bikossor/anonymus',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} anonymus by Bikossor. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
