@@ -12,6 +12,11 @@ gulp.task("clean-up", () => {
   });
 });
 
+gulp.task("copy-docs", function () {
+  return gulp.src('../../README.md')
+    .pipe(gulp.dest('./'));
+});
+
 gulp.task("build-typescript", () => {
   return merge([
     stream.js.pipe(gulp.dest("dist/")),
@@ -21,5 +26,6 @@ gulp.task("build-typescript", () => {
 
 gulp.task("default", gulp.series(
   "clean-up",
+  "copy-docs",
   "build-typescript"
 ));
