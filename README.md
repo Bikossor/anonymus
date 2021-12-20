@@ -55,6 +55,9 @@ console.log(anonymus.create(anonymus.sizeMax));
 //=> Creates all unique possibilities.
 ```
 
+## Upgrading
+You can read the upgrade guide [here](UPGRADING.md).
+
 ## Changelog
 You can read the changelog [here](CHANGELOG.md).
 
