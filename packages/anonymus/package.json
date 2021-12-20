@@ -10,7 +10,8 @@
   "scripts": {
     "test": "jest",
     "build": "tsc && gulp",
-    "prepare": "tsc && gulp"
+    "prepare": "tsc && gulp",
+    "commit": "cz"
   },
   "repository": {
     "type": "git",
