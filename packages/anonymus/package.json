@@ -1,6 +1,6 @@
 {
   "name": "anonymus",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "Generates random, unidentifiable names for any purpose",
   "main": "./dist/anonymus.min.js",
   "types": "./dist/anonymus.d.ts",
