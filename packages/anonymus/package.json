@@ -2,7 +2,7 @@
   "name": "anonymus",
   "version": "2.1.2",
   "description": "Generates random, unidentifiable names for any purpose",
-  "main": "./dist/anonymus.min.js",
+  "main": "./dist/anonymus.js",
   "types": "./dist/anonymus.d.ts",
   "files": [
     "dist/"
