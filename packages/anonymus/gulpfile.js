@@ -13,7 +13,7 @@ gulp.task("clean-up", () => {
 });
 
 gulp.task("copy-docs", function () {
-  return gulp.src('../../README.md')
+  return gulp.src(['../../README.md', '../../LICENSE'])
     .pipe(gulp.dest('./'));
 });
 
