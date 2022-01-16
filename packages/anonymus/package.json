@@ -34,17 +34,17 @@
   },
   "homepage": "https://anonymus.app/",
   "devDependencies": {
-    "@types/jest": "^27.0.2",
+    "@types/jest": "^27.4.0",
     "@types/node": "^16.7.4",
     "commitizen": "^4.2.4",
     "cz-conventional-changelog": "^3.3.0",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-typescript": "^6.0.0-alpha.1",
-    "jest": "^27.1.0",
+    "jest": "^27.4.7",
     "merge2": "^1.4.1",
-    "ts-jest": "^27.0.6",
-    "typescript": "^4.4.4"
+    "ts-jest": "^27.1.3",
+    "typescript": "^4.5.4"
   },
   "config": {
     "commitizen": {
