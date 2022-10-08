@@ -9,8 +9,8 @@
   ],
   "scripts": {
     "test": "jest",
-    "build": "tsc && gulp",
-    "prepare": "tsc && gulp",
+    "build": "node scripts/build.js",
+    "prepare": "node scripts/build.js",
     "commit": "cz"
   },
   "repository": {
