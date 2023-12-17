@@ -17,7 +17,7 @@ jobs:
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
-          node-version: lts/-n
+          node-version: ${{ matrix.node-version }}
       - name: Install dependencies
         run: npm --prefix packages/anonymus ci
       - run: npm --prefix packages/anonymus test
