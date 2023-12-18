@@ -8,7 +8,7 @@
     "dist/"
   ],
   "scripts": {
-    "test": "jest",
+    "test": "vitest",
     "build": "node scripts/build.js",
     "prepare": "node scripts/build.js",
     "commit": "cz"
