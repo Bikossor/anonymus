@@ -1,3 +1,4 @@
+import { expect, test } from "vitest";
 import { create } from "../dist/anonymus";
 
 test(`create() => An array including a string matching 2 words seperated by a space`, () => {
