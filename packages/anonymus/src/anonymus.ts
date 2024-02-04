@@ -228,28 +228,18 @@ export const version = [2, 0, 0].join(".");
 /**
  * Generates one or more unique names
  */
-export const create = (amount: number = 1) => {
+export function* createAnonymusGenerator() {
+  let indexColor = 0;
+  let indexAnimal = 0;
 
-    if (!Number.isInteger(amount)) {
-      throw new Error("Amount has to be an integer!");
-    }
+  // Shuffle the colors and animals
+  colors.sort(() => Math.random() - 0.5);
+  animals.sort(() => Math.random() - 0.5);
 
-    if (amount > sizeMax) {
-      throw new Error("Amount cannot exceed 'anonymus.maxSize'!");
-    }
+  while (true) {
+    yield `${colors.at(indexColor)} ${animals.at(indexAnimal)}`;
 
-    var result: Array<string> = [],
-      tmp: string;
-
-    for (var i = 0; i < amount; i++) {
-      tmp = randomColor() + " " + randomAnimal();
-
-      while (result.includes(tmp)) {
-        tmp = randomColor() + " " + randomAnimal();
-      }
-
-      result.push(tmp);
-    }
-
-    return result;
-};
+    indexColor++;
+    indexAnimal++;
+  }
+}
