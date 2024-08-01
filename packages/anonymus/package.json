@@ -34,7 +34,7 @@
   },
   "homepage": "https://anonymus.app/",
   "devDependencies": {
-    "@types/node": "^20.10.5",
+    "@types/node": "^22.0.2",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
     "typescript": "^5.3.3",
