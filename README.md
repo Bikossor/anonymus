@@ -62,6 +62,8 @@ You can read the upgrade guide [here](UPGRADING.md).
 You can read the changelog [here](CHANGELOG.md).
 
 ## Contributing
+- [Installation of Node.js](https://www.scaler.com/topics/javascript/install-node-js/)
+
 Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Versioning
